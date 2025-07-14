@@ -1,6 +1,36 @@
 @page "/admin/managecategories"
+@using WiseBlog.Models
+
+@code {
+    // Sample in-memory categories (should match Home.razor)
+    private List<Category> categories = new()
+    {
+        new Category { Id = 1, Name = "General" },
+        new Category { Id = 2, Name = "Development" }
+    };
+}
 
 <div class="container mt-5">
     <h4 class="mb-4">Manage Categories</h4>
-    <!-- TODO: Add Bootstrap table for categories -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in categories)
+            {
+                <tr>
+                    <td>@category.Name</td>
+                    <td>
+                        <a href="/admin/editcategory/@category.Id" class="btn btn-sm btn-warning me-2">Edit</a>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="/admin/createcategory" class="btn btn-primary">Create New Category</a>
 </div> 

@@ -1,14 +1,51 @@
 @page "/post/{id:int}"
+@using WiseBlog.Models
+@using Microsoft.AspNetCore.Components
 
-<div class="container mt-5">
-    <div class="card mx-auto" style="max-width: 600px;">
-        <div class="card-body">
-            <h4 class="card-title mb-2">Post Title</h4>
-            <p class="card-text mb-4">
-                Full post content goes here. Replace with real data.
-            </p>
-            <hr />
-            <small class="text-muted">By Author on 2024-01-01</small>
+@code {
+    [Parameter] public int id { get; set; }
+
+    // Sample in-memory posts and categories (should match Home.razor)
+    private List<BlogPost> posts = new()
+    {
+        new BlogPost { Id = 1, Title = "Welcome to WiseBlog!", Content = "This is your first post. Edit or delete it, then start blogging!", Author = "Admin", CreatedAt = DateTime.Now.AddDays(-1), CategoryId = 1 },
+        new BlogPost { Id = 2, Title = "BlazorBlog Inspiration", Content = "WiseBlog is inspired by BlazorBlog. Enjoy modern, responsive blogging!", Author = "Admin", CreatedAt = DateTime.Now.AddDays(-2), CategoryId = 2 },
+        new BlogPost { Id = 3, Title = "Getting Started", Content = "Learn how to use WiseBlog and customize it for your needs.", Author = "Admin", CreatedAt = DateTime.Now.AddDays(-3), CategoryId = 1 }
+    };
+    private Dictionary<int, string> categories = new()
+    {
+        { 1, "General" },
+        { 2, "Development" }
+    };
+    private BlogPost? post;
+
+    protected override void OnParametersSet()
+    {
+        post = posts.FirstOrDefault(p => p.Id == id);
+    }
+}
+
+@if (post == null)
+{
+    <div class="container mt-5">
+        <div class="alert alert-danger">Post not found.</div>
+        <a href="/" class="btn btn-secondary">Back to Home</a>
+    </div>
+}
+else
+{
+    <div class="container mt-5">
+        <div class="card mx-auto" style="max-width: 600px;">
+            <div class="card-body">
+                <h4 class="card-title mb-2">@post.Title</h4>
+                <div class="mb-2">
+                    <span class="badge bg-secondary">@categories[post.CategoryId]</span>
+                </div>
+                <small class="text-muted">By @post.Author on @post.CreatedAt.ToShortDateString()</small>
+                <hr />
+                <p class="card-text mb-4">@post.Content</p>
+                <a href="/" class="btn btn-outline-primary">Back to Home</a>
+            </div>
         </div>
     </div>
-</div> 
+} 

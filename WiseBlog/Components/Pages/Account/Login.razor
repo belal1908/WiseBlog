@@ -1,18 +1,64 @@
 @page "/account/login"
+@using Microsoft.AspNetCore.Components.Forms
+@inject WiseBlog.Data.SupabaseAuthService AuthService
+@inject NavigationManager Nav
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Components
 
 <div class="container mt-5">
     <div class="card mx-auto" style="max-width: 400px;">
         <div class="card-body">
             <h5 class="card-title mb-4">Login</h5>
+            @if (!string.IsNullOrEmpty(error))
+            {
+                <div class="alert alert-danger">@error</div>
+            }
             <div class="mb-3">
                 <label for="loginEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="loginEmail" placeholder="Enter email">
+                <input id="loginEmail" class="form-control" @bind="loginModel.Email" />
             </div>
             <div class="mb-3">
                 <label for="loginPassword" class="form-label">Password</label>
-                <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                <input id="loginPassword" type="password" class="form-control" @bind="loginModel.Password" />
             </div>
-            <button class="btn btn-primary w-100">Login</button>
+            <button class="btn btn-primary w-100" @onclick="LoginUser">Login</button>
         </div>
     </div>
-</div> 
+</div>
+
+@code {
+    private LoginModel loginModel = new LoginModel();
+    private string? error;
+
+    public class LoginModel
+    {
+        public string Email { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+    }
+
+    private async Task LoginUser()
+    {
+        error = null;
+        if (string.IsNullOrWhiteSpace(loginModel.Email))
+        {
+            error = "Email is required.";
+            return;
+        }
+        if (string.IsNullOrWhiteSpace(loginModel.Password))
+        {
+            error = "Password is required.";
+            return;
+        }
+        try
+        {
+            if (await AuthService.Login(loginModel.Email, loginModel.Password))
+                Nav.NavigateTo("/");
+            else
+                error = "Invalid login.";
+        }
+        catch (Exception ex)
+        {
+            error = $"Error: {ex.Message}";
+        }
+    }
+} 

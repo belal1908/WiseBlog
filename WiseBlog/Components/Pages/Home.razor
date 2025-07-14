@@ -1,18 +1,38 @@
 ﻿@page "/"
-@using WiseBlog.Data
-@inject BlogService BlogService
+@using WiseBlog.Models
+
+@code {
+    // Sample in-memory posts for demonstration
+    private List<BlogPost> posts = new()
+    {
+        new BlogPost { Id = 1, Title = "Welcome to WiseBlog!", Content = "This is your first post. Edit or delete it, then start blogging!", Author = "Admin", CreatedAt = DateTime.Now.AddDays(-1), CategoryId = 1 },
+        new BlogPost { Id = 2, Title = "BlazorBlog Inspiration", Content = "WiseBlog is inspired by BlazorBlog. Enjoy modern, responsive blogging!", Author = "Admin", CreatedAt = DateTime.Now.AddDays(-2), CategoryId = 2 },
+        new BlogPost { Id = 3, Title = "Getting Started", Content = "Learn how to use WiseBlog and customize it for your needs.", Author = "Admin", CreatedAt = DateTime.Now.AddDays(-3), CategoryId = 1 }
+    };
+    private Dictionary<int, string> categories = new()
+    {
+        { 1, "General" },
+        { 2, "Development" }
+    };
+}
 
 <div class="container mt-4">
     <h2>Recent Posts</h2>
     <div class="row">
-        @foreach (var post in BlogService.GetRecentPosts())
+        @foreach (var post in posts)
         {
             <div class="col-md-4">
                 <div class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title">@post.Title</h5>
-                        <p class="card-text">@post.Content</p>
-                        <a href="/post/@post.Id" class="btn btn-primary">Read More</a>
+                        <p class="card-text">@((post.Content?.Length > 100 ? post.Content.Substring(0, 100) + "..." : post.Content))</p>
+                        <div class="mb-2">
+                            <span class="badge bg-secondary">@categories[post.CategoryId]</span>
+                        </div>
+                        <small class="text-muted">By @post.Author on @post.CreatedAt.ToShortDateString()</small>
+                        <div class="mt-3">
+                            <a href="/post/@post.Id" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
                     </div>
                 </div>
             </div>

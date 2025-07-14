@@ -1,18 +1,103 @@
 @page "/account/register"
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Forms
+@inject WiseBlog.Data.SupabaseAuthService AuthService
+@inject NavigationManager Nav
 
 <div class="container mt-5">
     <div class="card mx-auto" style="max-width: 400px;">
         <div class="card-body">
             <h5 class="card-title mb-4">Register</h5>
+
+            @if (!string.IsNullOrEmpty(successMessage))
+            {
+                <div class="alert alert-success">@successMessage</div>
+            }
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <div class="alert alert-danger">@errorMessage</div>
+            }
+
             <div class="mb-3">
-                <label for="registerEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="registerEmail" placeholder="Enter email">
+                <label>Email</label>
+                <input class="form-control" @bind="registerModel.Email" />
             </div>
+
             <div class="mb-3">
-                <label for="registerPassword" class="form-label">Password</label>
-                <input type="password" class="form-control" id="registerPassword" placeholder="Password">
+                <label>Password</label>
+                <input class="form-control" type="password" @bind="registerModel.Password" />
             </div>
-            <button class="btn btn-primary w-100">Register</button>
+
+            <div class="mb-3">
+                <label>Confirm Password</label>
+                <input class="form-control" type="password" @bind="registerModel.ConfirmPassword" />
+            </div>
+
+            <button class="btn btn-primary" @onclick="HandleRegister">Register</button>
         </div>
     </div>
-</div> 
+</div>
+
+@code {
+    private RegisterModel registerModel = new RegisterModel();
+    private string? errorMessage;
+    private string? successMessage;
+
+    public class RegisterModel
+    {
+        public string Email { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+        public string ConfirmPassword { get; set; } = string.Empty;
+    }
+
+    private async Task HandleRegister()
+    {
+        errorMessage = null;
+        successMessage = null;
+        if (string.IsNullOrWhiteSpace(registerModel.Email))
+        {
+            errorMessage = "Email is required.";
+            return;
+        }
+        if (string.IsNullOrWhiteSpace(registerModel.Password))
+        {
+            errorMessage = "Password is required.";
+            return;
+        }
+        if (registerModel.Password.Length < 6)
+        {
+            errorMessage = "Password must be at least 6 characters.";
+            return;
+        }
+        if (string.IsNullOrWhiteSpace(registerModel.ConfirmPassword))
+        {
+            errorMessage = "Please confirm your password.";
+            return;
+        }
+        if (registerModel.Password != registerModel.ConfirmPassword)
+        {
+            errorMessage = "Passwords do not match.";
+            return;
+        }
+        try
+        {
+            var success = await AuthService.Register(registerModel.Email, registerModel.Password);
+            if (success)
+            {
+                successMessage = "Registration successful! Redirecting to login...";
+                StateHasChanged();
+                await Task.Delay(2000);
+                Nav.NavigateTo("/account/login");
+            }
+            else
+            {
+                errorMessage = "Registration failed. Please try again.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error: {ex.Message}";
+        }
+    }
+}
