@@ -6,6 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+builder.Services.AddScoped<WiseBlog.Data.BlogService>();
+builder.Services.AddScoped<WiseBlog.Data.CategoryService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

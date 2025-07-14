@@ -77,3 +77,4 @@
 /Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/WiseBlog.pdb
 /Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/WiseBlog.genruntimeconfig.cache
 /Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/ref/WiseBlog.dll
+/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/WiseBlog.sourcelink.json
