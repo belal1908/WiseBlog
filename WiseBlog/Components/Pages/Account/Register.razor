@@ -1,103 +1,99 @@
 @page "/account/register"
-@using System.ComponentModel.DataAnnotations
-@using Microsoft.AspNetCore.Components
-@using Microsoft.AspNetCore.Components.Forms
-@inject WiseBlog.Data.SupabaseAuthService AuthService
+@rendermode InteractiveServer
 @inject NavigationManager Nav
+@inject WiseBlog.Data.SupabaseAuthService AuthService
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Components.Forms
 
 <div class="container mt-5">
-    <div class="card mx-auto" style="max-width: 400px;">
+    <div class="card mx-auto shadow" style="max-width: 400px;">
         <div class="card-body">
-            <h5 class="card-title mb-4">Register</h5>
+            <h4 class="card-title mb-4 text-center">Create an Account</h4>
 
-            @if (!string.IsNullOrEmpty(successMessage))
+            @if (!string.IsNullOrWhiteSpace(error))
             {
-                <div class="alert alert-success">@successMessage</div>
-            }
-            @if (!string.IsNullOrEmpty(errorMessage))
-            {
-                <div class="alert alert-danger">@errorMessage</div>
+                <div class="alert alert-danger">@error</div>
             }
 
-            <div class="mb-3">
-                <label>Email</label>
-                <input class="form-control" @bind="registerModel.Email" />
-            </div>
+            <EditForm Model="@model" OnValidSubmit="RegisterUser">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
 
-            <div class="mb-3">
-                <label>Password</label>
-                <input class="form-control" type="password" @bind="registerModel.Password" />
-            </div>
+                <div class="mb-3">
+                    <label>Email</label>
+                    <InputText class="form-control" @bind-Value="model.Email" />
+                    <ValidationMessage For="@(() => model.Email)" />
+                </div>
 
-            <div class="mb-3">
-                <label>Confirm Password</label>
-                <input class="form-control" type="password" @bind="registerModel.ConfirmPassword" />
-            </div>
+                <div class="mb-3">
+                    <label>Password</label>
+                    <InputText type="password" class="form-control" @bind-Value="model.Password" />
+                    <ValidationMessage For="@(() => model.Password)" />
+                </div>
 
-            <button class="btn btn-primary" @onclick="HandleRegister">Register</button>
+                <div class="mb-3">
+                    <label>Confirm Password</label>
+                    <InputText type="password" class="form-control" @bind-Value="model.ConfirmPassword" />
+                    <ValidationMessage For="@(() => model.ConfirmPassword)" />
+                </div>
+
+                <button class="btn btn-success w-100" type="submit" disabled="@loading">
+                    @(loading
+                        ? @<span><span class="spinner-border spinner-border-sm me-2"></span> Registering...</span>
+                        : @<span>Register</span>)
+                </button>
+            </EditForm>
+
+            <div class="text-center mt-3">
+                <span>Already have an account?</span>
+                <a href="/account/login">Log in</a>
+            </div>
         </div>
     </div>
 </div>
 
 @code {
-    private RegisterModel registerModel = new RegisterModel();
-    private string? errorMessage;
-    private string? successMessage;
+    private RegisterModel model = new();
+    private bool loading = false;
+    private string? error;
 
     public class RegisterModel
     {
+        [Required]
+        [EmailAddress]
         public string Email { get; set; } = string.Empty;
+
+        [Required]
+        [MinLength(6, ErrorMessage = "Password must be at least 6 characters.")]
         public string Password { get; set; } = string.Empty;
+
+        [Required]
+        [Compare(nameof(Password), ErrorMessage = "Passwords do not match.")]
         public string ConfirmPassword { get; set; } = string.Empty;
     }
 
-    private async Task HandleRegister()
+    private async Task RegisterUser()
     {
-        errorMessage = null;
-        successMessage = null;
-        if (string.IsNullOrWhiteSpace(registerModel.Email))
-        {
-            errorMessage = "Email is required.";
-            return;
-        }
-        if (string.IsNullOrWhiteSpace(registerModel.Password))
-        {
-            errorMessage = "Password is required.";
-            return;
-        }
-        if (registerModel.Password.Length < 6)
-        {
-            errorMessage = "Password must be at least 6 characters.";
-            return;
-        }
-        if (string.IsNullOrWhiteSpace(registerModel.ConfirmPassword))
-        {
-            errorMessage = "Please confirm your password.";
-            return;
-        }
-        if (registerModel.Password != registerModel.ConfirmPassword)
-        {
-            errorMessage = "Passwords do not match.";
-            return;
-        }
+        error = null;
+        loading = true;
+
         try
         {
-            var success = await AuthService.Register(registerModel.Email, registerModel.Password);
+            var success = await AuthService.Register(model.Email, model.Password);
             if (success)
             {
-                successMessage = "Registration successful! Redirecting to login...";
-                StateHasChanged();
-                await Task.Delay(2000);
                 Nav.NavigateTo("/account/login");
             }
             else
             {
-                errorMessage = "Registration failed. Please try again.";
+                error = "Registration failed. Try a different email.";
             }
         }
         catch (Exception ex)
         {
-            errorMessage = $"Error: {ex.Message}";
+            error = $"Error: {ex.Message}";
         }
+
+        loading = false;
     }
 }

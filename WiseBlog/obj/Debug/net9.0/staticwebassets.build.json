@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SQkrVIKYCviBDiVoAeBqUpxsCXDaLEAPBfE05MUMLKM=",
+  "Hash": "Z53hocwNm/TXyiQEcfrA/rkH3ho2+AJyPqHYWAghfWU=",
   "Source": "WiseBlog",
   "BasePath": "_content/WiseBlog",
   "Mode": "Default",
@@ -353,12 +353,12 @@
       "OriginalItemSpec": "/Users/belal/Desktop/WiseBlog/WiseBlog/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/cju0k6i833-uqkmah8szb.gz",
+      "Identity": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/cju0k6i833-0ko7bhnsss.gz",
       "SourceId": "WiseBlog",
       "SourceType": "Computed",
       "ContentRoot": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/WiseBlog",
-      "RelativePath": "WiseBlog#[.{fingerprint=uqkmah8szb}]?.styles.css.gz",
+      "RelativePath": "WiseBlog#[.{fingerprint=0ko7bhnsss}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -367,8 +367,8 @@
       "RelatedAsset": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/scopedcss/bundle/WiseBlog.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "alj5b5tso2",
-      "Integrity": "buHmA7VvvUcVCYGKyd8OQHW0bdV66ONt3rzgClcTGBo=",
+      "Fingerprint": "fnj8j6fqqi",
+      "Integrity": "ha8sWKzWlHiz5pw6g6ratxWLo08HKL5MsQaCZR26u40=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/scopedcss/bundle/WiseBlog.styles.css"
@@ -731,12 +731,12 @@
       "OriginalItemSpec": "/Users/belal/Desktop/WiseBlog/WiseBlog/wwwroot/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Identity": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/p9my7efbr8-uqkmah8szb.gz",
+      "Identity": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/p9my7efbr8-0ko7bhnsss.gz",
       "SourceId": "WiseBlog",
       "SourceType": "Computed",
       "ContentRoot": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/WiseBlog",
-      "RelativePath": "WiseBlog#[.{fingerprint=uqkmah8szb}]!.bundle.scp.css.gz",
+      "RelativePath": "WiseBlog#[.{fingerprint=0ko7bhnsss}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -745,8 +745,8 @@
       "RelatedAsset": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/scopedcss/projectbundle/WiseBlog.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "alj5b5tso2",
-      "Integrity": "buHmA7VvvUcVCYGKyd8OQHW0bdV66ONt3rzgClcTGBo=",
+      "Fingerprint": "fnj8j6fqqi",
+      "Integrity": "ha8sWKzWlHiz5pw6g6ratxWLo08HKL5MsQaCZR26u40=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/scopedcss/projectbundle/WiseBlog.bundle.scp.css"
@@ -1018,8 +1018,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "uqkmah8szb",
-      "Integrity": "hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8=",
+      "Fingerprint": "0ko7bhnsss",
+      "Integrity": "8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/scopedcss/bundle/WiseBlog.styles.css"
@@ -1039,8 +1039,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "uqkmah8szb",
-      "Integrity": "hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8=",
+      "Fingerprint": "0ko7bhnsss",
+      "Integrity": "8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/scopedcss/projectbundle/WiseBlog.bundle.scp.css"
@@ -15506,13 +15506,13 @@
       ]
     },
     {
-      "Route": "WiseBlog.bundle.scp.css",
-      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/p9my7efbr8-uqkmah8szb.gz",
+      "Route": "WiseBlog.0ko7bhnsss.bundle.scp.css",
+      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/p9my7efbr8-0ko7bhnsss.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000567536890"
+          "Quality": "0.000552486188"
         }
       ],
       "ResponseHeaders": [
@@ -15522,19 +15522,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1761"
+          "Value": "1809"
         },
         {
           "Name": "ETag",
-          "Value": "\"buHmA7VvvUcVCYGKyd8OQHW0bdV66ONt3rzgClcTGBo=\""
+          "Value": "\"ha8sWKzWlHiz5pw6g6ratxWLo08HKL5MsQaCZR26u40=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Jul 2025 12:43:33 GMT"
+          "Value": "Wed, 16 Jul 2025 12:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -15550,18 +15550,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8=\""
+          "Value": "W/\"8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "0ko7bhnsss"
+        },
+        {
+          "Name": "label",
+          "Value": "WiseBlog.bundle.scp.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8="
+          "Value": "sha256-8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE="
         }
       ]
     },
     {
-      "Route": "WiseBlog.bundle.scp.css",
+      "Route": "WiseBlog.0ko7bhnsss.bundle.scp.css",
       "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/scopedcss/projectbundle/WiseBlog.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -15571,7 +15579,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5758"
+          "Value": "5739"
         },
         {
           "Name": "Content-Type",
@@ -15579,258 +15587,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8=\""
+          "Value": "\"8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Jul 2025 12:43:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8="
-        }
-      ]
-    },
-    {
-      "Route": "WiseBlog.bundle.scp.css.gz",
-      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/p9my7efbr8-uqkmah8szb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1761"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"buHmA7VvvUcVCYGKyd8OQHW0bdV66ONt3rzgClcTGBo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Jul 2025 12:43:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-buHmA7VvvUcVCYGKyd8OQHW0bdV66ONt3rzgClcTGBo="
-        }
-      ]
-    },
-    {
-      "Route": "WiseBlog.styles.css",
-      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/cju0k6i833-uqkmah8szb.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000567536890"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1761"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"buHmA7VvvUcVCYGKyd8OQHW0bdV66ONt3rzgClcTGBo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Jul 2025 12:43:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8="
-        }
-      ]
-    },
-    {
-      "Route": "WiseBlog.styles.css",
-      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/scopedcss/bundle/WiseBlog.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5758"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Jul 2025 12:43:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8="
-        }
-      ]
-    },
-    {
-      "Route": "WiseBlog.styles.css.gz",
-      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/cju0k6i833-uqkmah8szb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1761"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"buHmA7VvvUcVCYGKyd8OQHW0bdV66ONt3rzgClcTGBo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Jul 2025 12:43:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-buHmA7VvvUcVCYGKyd8OQHW0bdV66ONt3rzgClcTGBo="
-        }
-      ]
-    },
-    {
-      "Route": "WiseBlog.uqkmah8szb.bundle.scp.css",
-      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/p9my7efbr8-uqkmah8szb.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000567536890"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1761"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"buHmA7VvvUcVCYGKyd8OQHW0bdV66ONt3rzgClcTGBo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Jul 2025 12:43:33 GMT"
+          "Value": "Wed, 16 Jul 2025 12:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uqkmah8szb"
+          "Value": "0ko7bhnsss"
         },
         {
           "Name": "label",
@@ -15838,13 +15609,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8="
+          "Value": "sha256-8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE="
         }
       ]
     },
     {
-      "Route": "WiseBlog.uqkmah8szb.bundle.scp.css",
-      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/scopedcss/projectbundle/WiseBlog.bundle.scp.css",
+      "Route": "WiseBlog.0ko7bhnsss.bundle.scp.css.gz",
+      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/p9my7efbr8-0ko7bhnsss.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15853,7 +15624,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5758"
+          "Value": "1809"
         },
         {
           "Name": "Content-Type",
@@ -15861,56 +15632,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8=\""
+          "Value": "\"ha8sWKzWlHiz5pw6g6ratxWLo08HKL5MsQaCZR26u40=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Jul 2025 12:43:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uqkmah8szb"
-        },
-        {
-          "Name": "label",
-          "Value": "WiseBlog.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8="
-        }
-      ]
-    },
-    {
-      "Route": "WiseBlog.uqkmah8szb.bundle.scp.css.gz",
-      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/p9my7efbr8-uqkmah8szb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1761"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"buHmA7VvvUcVCYGKyd8OQHW0bdV66ONt3rzgClcTGBo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Jul 2025 12:43:33 GMT"
+          "Value": "Wed, 16 Jul 2025 12:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15928,7 +15654,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uqkmah8szb"
+          "Value": "0ko7bhnsss"
         },
         {
           "Name": "label",
@@ -15936,18 +15662,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-buHmA7VvvUcVCYGKyd8OQHW0bdV66ONt3rzgClcTGBo="
+          "Value": "sha256-ha8sWKzWlHiz5pw6g6ratxWLo08HKL5MsQaCZR26u40="
         }
       ]
     },
     {
-      "Route": "WiseBlog.uqkmah8szb.styles.css",
-      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/cju0k6i833-uqkmah8szb.gz",
+      "Route": "WiseBlog.0ko7bhnsss.styles.css",
+      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/cju0k6i833-0ko7bhnsss.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000567536890"
+          "Quality": "0.000552486188"
         }
       ],
       "ResponseHeaders": [
@@ -15957,15 +15683,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1761"
+          "Value": "1809"
         },
         {
           "Name": "ETag",
-          "Value": "\"buHmA7VvvUcVCYGKyd8OQHW0bdV66ONt3rzgClcTGBo=\""
+          "Value": "\"ha8sWKzWlHiz5pw6g6ratxWLo08HKL5MsQaCZR26u40=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Jul 2025 12:43:33 GMT"
+          "Value": "Wed, 16 Jul 2025 12:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15985,13 +15711,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8=\""
+          "Value": "W/\"8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uqkmah8szb"
+          "Value": "0ko7bhnsss"
         },
         {
           "Name": "label",
@@ -15999,12 +15725,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8="
+          "Value": "sha256-8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE="
         }
       ]
     },
     {
-      "Route": "WiseBlog.uqkmah8szb.styles.css",
+      "Route": "WiseBlog.0ko7bhnsss.styles.css",
       "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/scopedcss/bundle/WiseBlog.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -16014,7 +15740,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5758"
+          "Value": "5739"
         },
         {
           "Name": "Content-Type",
@@ -16022,11 +15748,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8=\""
+          "Value": "\"8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Jul 2025 12:43:33 GMT"
+          "Value": "Wed, 16 Jul 2025 12:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16036,7 +15762,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uqkmah8szb"
+          "Value": "0ko7bhnsss"
         },
         {
           "Name": "label",
@@ -16044,13 +15770,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hsBLklVgSBtexBZDREQw+VotbPZe6scd1RmTVtERWu8="
+          "Value": "sha256-8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE="
         }
       ]
     },
     {
-      "Route": "WiseBlog.uqkmah8szb.styles.css.gz",
-      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/cju0k6i833-uqkmah8szb.gz",
+      "Route": "WiseBlog.0ko7bhnsss.styles.css.gz",
+      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/cju0k6i833-0ko7bhnsss.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -16059,7 +15785,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1761"
+          "Value": "1809"
         },
         {
           "Name": "Content-Type",
@@ -16067,11 +15793,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"buHmA7VvvUcVCYGKyd8OQHW0bdV66ONt3rzgClcTGBo=\""
+          "Value": "\"ha8sWKzWlHiz5pw6g6ratxWLo08HKL5MsQaCZR26u40=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Jul 2025 12:43:33 GMT"
+          "Value": "Wed, 16 Jul 2025 12:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16089,7 +15815,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uqkmah8szb"
+          "Value": "0ko7bhnsss"
         },
         {
           "Name": "label",
@@ -16097,7 +15823,281 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-buHmA7VvvUcVCYGKyd8OQHW0bdV66ONt3rzgClcTGBo="
+          "Value": "sha256-ha8sWKzWlHiz5pw6g6ratxWLo08HKL5MsQaCZR26u40="
+        }
+      ]
+    },
+    {
+      "Route": "WiseBlog.bundle.scp.css",
+      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/p9my7efbr8-0ko7bhnsss.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000552486188"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1809"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ha8sWKzWlHiz5pw6g6ratxWLo08HKL5MsQaCZR26u40=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 12:29:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE="
+        }
+      ]
+    },
+    {
+      "Route": "WiseBlog.bundle.scp.css",
+      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/scopedcss/projectbundle/WiseBlog.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5739"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 12:29:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE="
+        }
+      ]
+    },
+    {
+      "Route": "WiseBlog.bundle.scp.css.gz",
+      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/p9my7efbr8-0ko7bhnsss.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1809"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ha8sWKzWlHiz5pw6g6ratxWLo08HKL5MsQaCZR26u40=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 12:29:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ha8sWKzWlHiz5pw6g6ratxWLo08HKL5MsQaCZR26u40="
+        }
+      ]
+    },
+    {
+      "Route": "WiseBlog.styles.css",
+      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/cju0k6i833-0ko7bhnsss.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000552486188"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1809"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ha8sWKzWlHiz5pw6g6ratxWLo08HKL5MsQaCZR26u40=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 12:29:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE="
+        }
+      ]
+    },
+    {
+      "Route": "WiseBlog.styles.css",
+      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/scopedcss/bundle/WiseBlog.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5739"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 12:29:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8Ej2nO+JCdSaApA+PtkGtaYq/4CqclSQf0mDmP24TgE="
+        }
+      ]
+    },
+    {
+      "Route": "WiseBlog.styles.css.gz",
+      "AssetFile": "/Users/belal/Desktop/WiseBlog/WiseBlog/obj/Debug/net9.0/compressed/cju0k6i833-0ko7bhnsss.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1809"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ha8sWKzWlHiz5pw6g6ratxWLo08HKL5MsQaCZR26u40=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 12:29:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ha8sWKzWlHiz5pw6g6ratxWLo08HKL5MsQaCZR26u40="
         }
       ]
     }

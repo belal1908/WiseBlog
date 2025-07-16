@@ -1,20 +1,48 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@inject WiseBlog.Data.SupabaseAuthService AuthService
+@inject NavigationManager Nav
+
+<div class="top-row ps-3 navbar navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">WiseBlog</a>
+        <a class="navbar-brand" href="/">WiseBlog</a>
     </div>
 </div>
 
-<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+<input type="checkbox" class="navbar-toggler" title="Toggle navigation menu" />
 
 <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
     <nav class="nav flex-column">
+
         <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">Home</NavLink>
         <NavLink class="nav-link" href="/about">About</NavLink>
-        <NavLink class="nav-link" href="/admin/dashboard">Dashboard</NavLink>
-        <NavLink class="nav-link" href="/admin/manageposts">Manage Posts</NavLink>
-        <NavLink class="nav-link" href="/admin/managecategories">Manage Categories</NavLink>
-        <NavLink class="nav-link" href="/account/login">Login</NavLink>
-        <NavLink class="nav-link" href="/account/register">Register</NavLink>
+
+        @if (AuthService.IsAuthenticated)
+        {
+            <NavLink class="nav-link" href="/admin/dashboard">Dashboard</NavLink>
+            <NavLink class="nav-link" href="/admin/manageposts">Manage Posts</NavLink>
+            <NavLink class="nav-link" href="/admin/managecategories">Manage Categories</NavLink>
+        }
+
+        <hr />
+
+        @if (!AuthService.IsAuthenticated)
+        {
+            <NavLink class="nav-link" href="/account/login">Login</NavLink>
+            <NavLink class="nav-link" href="/account/register">Register</NavLink>
+        }
+        else
+        {
+            <span class="nav-link disabled text-white">
+                Welcome, @AuthService.GetCurrentUser()?.Email
+            </span>
+            <button class="btn btn-outline-light btn-sm m-2" @onclick="HandleLogout">Logout</button>
+        }
     </nav>
 </div>
 
+@code {
+    private async Task HandleLogout()
+    {
+        await AuthService.Logout();
+        Nav.NavigateTo("/account/login", true); // force reload after logout
+    }
+}
